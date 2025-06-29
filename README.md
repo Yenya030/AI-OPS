@@ -23,6 +23,7 @@
   - [Requirements](#requirements)
   - [Get Started](#get-started)
   - [Additional Information](#additional-information)
+  - [Running Tests](#running-tests)
 - [⚖️ Ethical and Legal Considerations](#️-ethical-and-legal-considerations)
   - [Disclaimer](#disclaimer)
 
@@ -115,6 +116,15 @@ pip install .
 ai-ops-cli --api AI-OPS_API_ADDRESS
 ```
 
+### Running Tests
+
+To run the unit tests locally you need a running Ollama server and Docker for Qdrant.
+Execute the helper script below which reproduces the CI environment:
+
+```bash
+./scripts/run_tests_with_ollama.sh
+```
+
 ### Additional Information
 
 **User Documentation**
@@ -125,6 +135,8 @@ ai-ops-cli --api AI-OPS_API_ADDRESS
 **Developer Documentation**
 
 1. [Project Structure](./docs/development/1.Project%20Structure.md)
+2. [Agent Architecture Evaluation](./docs/development/2.%20Agent%20Architecture%20Evaluation.md)
+3. [Running Tests](./docs/development/3.Running%20Tests.md)
 
 ---
 
