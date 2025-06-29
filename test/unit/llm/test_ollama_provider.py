@@ -1,10 +1,13 @@
 import os
 import sys
 import unittest
+import pytest
 
 from dotenv import load_dotenv
 from tool_parse import ToolRegistry
 from src.core import Ollama, ProviderError
+
+pytest.skip("requires running Ollama", allow_module_level=True)
 
 
 class TestOllamaProvider(unittest.TestCase):
